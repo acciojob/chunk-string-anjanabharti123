@@ -1,13 +1,12 @@
-function stringChop(str, size) {
+function stringChop(str, chunkSize) {
   // your code here
-	if(!str){
-		return[];
-	}
-	let chunks = [];
-	for(let i = 0; i <str.length; i += size){
-		chunks.push(str.slice(i, i+size))
-	}
-     retrun chunks;
+	if (!str) return [];
+
+    let chunks = [];
+    for (let i = 0; i < str.length; i += chunkSize) {
+        chunks.push(str.slice(i, i + chunkSize));
+    }
+    return chunks;
 }
 
 // Do not change the code below
